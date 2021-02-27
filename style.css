@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 8% 84% 8%;
+    overflow: hidden;
+}
+header{
+    width: 100vw;
+    background-color: #ecf0f1;
+    justify-content: center;
+}
+nav{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    z-index: 1000;
+}
+.area-logo{
+    justify-content: left;
+    align-items: center;
+    height: 8vh;
+}
+.twitter{
+    transition: 1s;
+    transform: translate3d(0px, 0vh, 0px);
+}
+.instagram{
+    transition: 1s;
+    transform: translate3d(0px, -8vh, 0px);
+}
+.github{
+    transition: 1s;
+    transform: translate3d(0px, -16vh, 0px);
+}
+.linkedin{
+    transition: 1s;
+    transform: translate3d(0px, -24vh, 0px);
+}
+#logoTwitter{
+    color: #3498db;
+}
+#logoInstagram{
+    color: #dc446e;
+}
+#logoGithub{
+    color: #24292e;
+}
+#logoLinkedin{
+    color: #3498db;
+}
+
+.area-logo h2{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    height: 8vh;
+    line-height: 8vh;
+    z-index: -1;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    z-index: 1000;
+}
+nav ul li {
+    display: inline-block;
+    color: #34495e;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    line-height: 8vh;
+    cursor: pointer;
+    z-index: 1000;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 400vw;
+    background-color: #fff;
+}
+main .page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 84vh;
+    z-index: 999;
+    background-color: #fff;
+}
+.tela1{
+    transition: 1s;
+    transform: translate3d(0vw, 0px, 0px);
+}
+.tela2{
+    transition: 1s;
+    transform: translate3d(-100vw, 0px, 0px);
+}
+.tela3{
+    transition: 1s;
+    transform: translate3d(-200vw, 0px, 0px);
+}
+.tela4{
+    transition: 1s;
+    transform: translate3d(-300vw, 0px, 0px);
+}
+.area-image{
+    width: 50%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.area-image img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+}
+main .page.page2 .area-image img{
+    border-top: 3px solid #5b67ac;
+    border-bottom: 3px solid #f7c751;
+    border-left: 3px solid #e5475f;
+    border-right: 3px solid #dc446e;
+}
+main .page.page3 .area-image img{
+    border: 3px solid #24292e;
+}
+.area-informations{
+    width: 50%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.area-informations h1{
+    font-size: 45px;
+    color: #3498db;
+    text-transform: capitalize;
+}
+main .page.page2 .area-informations h1{
+    color: #e5475f;
+}
+main .page.page3 .area-informations h1{
+    color: #24292e;
+}
+.area-informations p{
+    color: #030303;
+    font-weight: 600;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    max-width: 450px;
+}
+.area-informations button{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    color: #3498db;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    cursor: pointer;
+}
+main .page.page2 .area-informations button{
+    color: #e5475f;
+    border: 2px solid #e5475f;
+}
+main .page.page3 .area-informations button{
+    color: #030303;
+    border: 2px solid #030303;
+}
+.area-informations button:hover{
+    color: #fff;
+    background-color: #3498db;
+    transition: .6s;
+}
+main .page.page2 .area-informations button:hover{
+    background-color: #e5475f;
+    color: #fff;
+}
+main .page.page3 .area-informations button:hover{
+    background-color: #030303;
+    color: #fff;
+}
+footer{
+    justify-content: center;
+    display: flex;
+    width: 400vw;
+    height: 8vh;
+}
+.footer{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.footer-twitter{
+    background-color: #3498db;
+}
+.footer-instagram{
+    background-color: #e5475f;
+}
+.footer-github{
+    background-color: #030303;
+}
+.footer-linkedin{
+    background-color: #3498db;
+}
+
+footer h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}

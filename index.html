@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo" class="area-logo">
+                <h2 id="logoTwitter">Twitter</h2>
+                <h2 id="logoInstagram">Instagram</h2>
+                <h2 id="logoGithub">Github</h2>
+                <h2 id="logoLinkedin">Linkedin</h2>
+            </div>
+            <ul>
+                <li id="btnTwitter" onclick="mudarTela(1)">twitter</li>
+                <li id="btnInstagram" onclick="mudarTela(2)">instagram</li>
+                <li id="btnGithub" onclick="mudarTela(3)">github</li>
+                <li id="btnLinkedin" onclick="mudarTela(4)">linkedin</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="page" class="page page1">
+            <div class="area-image">
+                <img src="perfil.jpg">
+            </div>
+            <div class="area-informations">
+                <div class="informations">
+                    <h1>@Pedroh_hcunha</h1>
+                    <p>
+                        Rede social de 144 caracteres
+                    </p>
+                    <a target="blank" href="https://twitter.com/home">
+                        <button>Saiba Mais</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page page2">
+            <div class="area-image">
+                <img src="perfil.jpg">
+            </div>
+            <div class="area-informations">
+                <div class="informations">
+                    <h1>@Pedrohhcunha</h1>
+                    <p>
+                        Rede social de fotos
+                    </p>
+                    <a target="blank" href="https://instagram.com/pedrohhcunha">
+                        <button>Saiba Mais</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page page3">
+            <div class="area-image">
+                <img src="perfil.jpg">
+            </div>
+            <div class="area-informations">
+                <div class="informations">
+                    <h1>@Pedroh_hcunha</h1>
+                    <p>
+                    Rede social de programadores
+                    </p>
+                    <a target="blank" href="https://github.com/pedrohhcunha">
+                        <button>Saiba Mais</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page page4">
+            <div class="area-image">
+                <img src="perfil.jpg">
+            </div>
+            <div class="area-informations">
+                <div class="informations">
+                    <h1>@Pedrohhcunha</h1>
+                    <p>
+                        Rede social pra arruma trampo
+                    </p>
+                    <a target="blank" href="https://linkedin.com/pedrohhcunha">
+                        <button>Saiba Mais</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer footer-twitter">
+            www.twitter.com
+        </div>
+        <div class="footer footer-instagram">
+            www.instagram.com
+        </div>
+        <div class="footer footer-github">
+            www.github.com
+        </div>
+        <div class="footer footer-linkedin">
+            www.linkedin.com
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
